@@ -1,9 +1,11 @@
 def calculate(input_list):
     """
-    Validates the input list for 9 numeric values.
-    Further statistical calculations will follow.
+    Validates input and reshapes into a 3x3 NumPy array.
     """
     if len(input_list) != 9:
         raise ValueError("List must contain nine numbers.")
 
-    # TODO: reshape into matrix and compute statistics
+    # Reshape input list into 3x3 NumPy array
+    matrix = np.array(input_list).reshape(3, 3)
+
+    # TODO: Perform statistical calculations
